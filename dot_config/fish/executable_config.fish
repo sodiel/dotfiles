@@ -7,6 +7,7 @@ function fish_prompt -d "Write out the prompt"
 end
 
 if status is-interactive # Commands to run in interactive sessions can go here
+    atuin init fish | source
 
     # No greeting
     set fish_greeting
@@ -18,9 +19,10 @@ if status is-interactive # Commands to run in interactive sessions can go here
     end
 
     # Aliases
-    alias pamcan pacman
     alias ls 'eza --icons'
     alias clear "printf '\033[2J\033[3J\033[1;1H'"
+    
+    # Hyprland bar
     alias q 'qs -c ii'
     
 end
