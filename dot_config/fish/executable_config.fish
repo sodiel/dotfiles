@@ -7,7 +7,7 @@ function fish_prompt -d "Write out the prompt"
 end
 
 if status is-interactive # Commands to run in interactive sessions can go here
-    atuin init fish | source
+	#    atuin init fish | source
 
     # No greeting
     set fish_greeting
